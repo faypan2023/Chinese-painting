@@ -1,0 +1,487 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif; */
+
+html {
+    font-size: 10px;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+body {
+    font: 1.5rem verdana, arial, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin: 2rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /*set the imags to be responsive, when the browser get small, the image will shrink, when the browser get bigger,it will not exceed the actual size*/
+    /* margin: 2rem; */
+}
+
+header img {
+    width: 20%;
+    /*logo size*/
+    max-width: 100px;
+    margin: 5px;
+}
+/* Pseudo-classes */
+nav a:link{
+    color:white;
+}
+nav a:visited{
+    color:#a07d35;
+}
+nav a:hover{
+    color:#e4d5c8;
+  text-decoration: none;
+}
+
+a:link{
+    color:#333333;
+}
+a:visited{
+    color:#a07d35;
+}
+a:hover{
+    color:#e4d5c8;
+  text-decoration: none;
+}
+
+
+/*header and navigation*/
+header {
+    background-color: #333333;
+    color: #fff;
+    display: flex;
+    /*logo and nav side by side*/
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100%;
+    /* max-width: 1350px;
+    margin: auto; */
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /*logo and title side by side */
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    background-color: #b4b4b4;
+
+    width: 100%;
+    display: none;
+    /*hide the nav */
+}
+
+nav li {
+    padding: 1rem;
+    border-bottom: solid 1px #fafafa;
+}
+
+nav li a {
+    display: block;
+}
+
+.navToggler:checked ~ nav {
+    display: block;
+    /* when checked show the nav */
+}
+
+.navToggler {
+    display: none;
+}
+
+/*hide the checkbox,only show the menu icon*/
+.navTogglerMenu {
+    height: 100%;
+    /* the icon will not shrink */
+    display: flex;
+    align-items: center;
+    /* use flex to let the icon vertically centered */
+    margin-right: 3rem;
+}
+
+.mi {
+    color: white;
+}
+
+.menuClose {
+    display: none;
+}
+
+.navToggler:checked ~ .navTogglerMenu .menuClose {
+    display: block;
+}
+
+.navToggler:checked ~ .navTogglerMenu .menuOpen {
+    display: none;
+}
+
+
+
+/*main*/
+main {
+    padding:4rem;
+    /*set some space on the border*/
+}
+
+.bigTitle {
+    margin-top: 70px;/*the home layout is different from interior pages, home page dont't have hero picture*/
+}
+.bigTitleH{
+    margin-top: 5px;
+}
+/* material icons */
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    font-size: 3rem;
+    color: #333333;
+}
+.menuClose, .menuOpen{
+    color:white;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*align center both vertical and horizontal*/
+}
+
+
+.quote {
+    font-style: italic;
+    color: #a9a9a9;
+    margin: 4rem 40px;
+}
+
+figcaption {
+    font-size: 1rem;
+    font-style: italic;
+    color: #3f3f3f;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/*footer*/
+footer {
+    background-color: #333333;
+    color: #fff;
+    height: auto;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.footerLogo {
+    display: flex;
+    /*logo,title side by side*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer img {
+    width: 10%;
+    margin: 5px;
+}
+
+/*code for video responsive*/
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*History page css style*/
+/*hero section*/
+.heroHistory {
+    background: url("../images/Hero1-s.jpg") center center / cover no-repeat;
+    height: 230px;
+    color: #fff;
+}
+
+.heroHistory h1,
+.heroHistory h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.heroHistory h1 {
+    padding: 120px 30px 15px;
+}
+
+.heroHistory h2 {
+    padding: 0px 30px 15px;
+}
+
+.history figure {
+    margin: auto;
+    /*set the pictures horizontally centered*/
+}
+.firstImage{
+    margin:auto 2rem;/*align the first image, the size is different with the rests*/
+}
+/*code for map responsive*/
+.mapWrapper {
+    position: relative;
+    padding-bottom: 62.5%;
+    height: 0;
+    overflow: hidden;
+}
+
+.mapWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*Artists page css style*/
+/*hero section*/
+.heroArtists {
+    background: url("../images/Hero2-s.jpg") center center / cover no-repeat;
+    height: 230px;
+    color: #fff;
+}
+
+.heroArtists h1,
+.heroArtists h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.heroArtists h1 {
+    padding: 120px 30px 15px;
+}
+
+.heroArtists h2 {
+    padding: 0px 30px 15px;
+}
+
+/*main section*/
+.artists img{
+    margin:auto;/*align the images*/
+}
+.artists h2 {
+    text-align: center;
+    margin: 0.5rem auto;
+    font-style:normal;
+}
+
+.artists h3 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
+/*media queries*/
+@media screen and (min-width: 800px) {
+    main > * {
+        max-width: 1350px;
+        margin: auto;
+    }
+    .logo {
+        font-size: 3.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin: 4rem;
+    }
+
+    .bigTitle {
+        margin-top: 90px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    /*navigation responsive*/
+    .navTogglerMenu {
+        display: none;
+    }
+
+    nav {
+        all: unset;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+        /* navigation items side by side */
+        margin-right: 3rem;
+    }
+
+    nav li {
+        border-bottom: none;
+    }
+
+
+    /*home page responsive*/
+    .intro,
+    .Gongbi,
+    .freeStyle {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 2rem;
+    }
+    .Gongbi figure{
+        display:flex;
+        flex-direction:column;/*keep the figcaption aligned */
+        justify-content:space-between;
+    }
+    .freeStyle figure{
+        display:flex;
+        flex-direction:column;/*keep the figcaption aligned */
+        justify-content:space-between;
+    }
+    .material-symbols-outlined {
+        font-size: 5.5rem;
+    }
+
+    figcaption {
+        font-size: 1.6rem;
+    }
+
+
+    footer {
+        display: flex;
+        /*logo,title side by side*/
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /*history page responsive*/ 
+    .heroHistory {
+        background: url("../images/Hero1-L.jpg") center center / cover no-repeat;
+        max-width: 1350px;
+        margin: auto;
+        height: 350px;
+        color: #fff;
+    }
+
+    .heroHistory h1 {
+        padding: 140px 30px 10px;
+    }
+
+    .heroHistory h2 {
+        padding: 0px 30px 15px;
+    }
+
+    .history {
+        display: grid;
+        /*set images and articles side by side*/
+        grid-template-columns: repeat(2, 1fr);/*notice: value 50% and 1fr is different*/
+        gap: 4rem;
+    }
+
+    main article:nth-child(even) figure {
+        order: 1;
+    }
+
+    /*artists page responsive*/
+    .heroArtists {
+        background: url("../images/Hero2-L.jpg") center center / cover no-repeat;
+        max-width: 1350px;
+        margin: auto;
+        height: 350px;
+        color: #fff;
+    }
+
+    .heroArtists h1 {
+        padding: 140px 30px 10px;
+    }
+
+    .heroArtists h2 {
+        padding: 0px 30px 15px;
+    }
+
+    .artists {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1350px) {
+    header {
+        padding: 0 10%;
+    }
+
+    /*add some padding on the side for navigation*/
+    main {
+        padding: 5rem 10% 4rem;
+    }
+}
