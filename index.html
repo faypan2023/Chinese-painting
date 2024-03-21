@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- include this code to build a responsive webpage -->
+    <title>Chinese Traditional Painting</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <!-- end google fonts -->
+    <!--  material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- end material icons -->
+    <link rel="stylesheet" href="styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+</head>
+
+<body>
+ 
+
+   <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+            <h1 class="title">Chinese Paintings</h1>
+        </div>
+        <!-- add checkbox to control the drop menu to show or hide-->
+        <input type="checkbox"  class="navToggler" id="navToggler">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="pages/history.html">History</a></li>
+                <li><a href="pages/artists.html">Artists</a></li>
+            </ul>
+        </nav>
+        <!-- add google icons as navTogglerMenu. put them in the lable, the lable has the same class name with the checkbox, so they are linked, we can use menu to control the checkbox-->
+        <label for="navToggler" class="navTogglerMenu" name="navToggler">
+            <span class="material-symbols-outlined mi menuOpen">menu</span>
+            <span class="material-symbols-outlined mi menuClose">close</span>
+        </label>
+    </header> 
+
+    <main>
+        <h1 class="bigTitle">Chinese Traditional Painting</h1>
+        <section class="intro">
+            <div>
+                <p>Chinese Traditional Painting, also known as "Dan Qing" or simply "Guo Hua," mainly refers to the scroll paintings created with a brush dipped in water, ink, and colors on silk, Xuan paper, or silk fabric, later mounted as scrolls. Some paintings are completed on walls or lacquerware. The tools and materials include brushes, ink, traditional Chinese painting pigments, Xuan paper, silk, among others. The execution involves brushes dipped in black ink (made from pine soot and animal glue) or colored inks (made from animal hair), typically excluding the use of oil. </p>
+                <p>Chinese painting is one of the oldest continuous artistic traditions in the world. The history of Chinese painting, dating back to ancient times, unearthed the earliest silk painting "Dragon and Phoenix with Court Ladies" from the Eastern Zhou dynasty tombs. The oldest extant complete work is a Tang dynasty copy of Gu Kaizhi's "Nüshi Zhen Tu." Chinese literati artists gained high social status after the Five Dynasties and Ten Kingdoms period. Before the Song dynasty, painting on silk and fabrics was costly, resulting in themes primarily focused on royal portraits or records of life. However, during the Song and Yuan dynasties, paper improvements led to the proliferation of painting among scholars and the rise of literati painting, diversifying themes and techniques.</p>
+                <p>During the Ming dynasty, painting spread to the masses, becoming part of urban life, giving rise to genre paintings depicting customs and traditions. By the late Qing dynasty, painting materials diversified, leading to multidimensional developments.</p>
+                <p><a href="pages/history.html">Learn more about the history<span class="arrow material-symbols-outlined">double_arrow</span></a></p>
+            </div>
+            <figure>
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/babyPlaying-L.jpg">
+                    <source media="(min-width: 800px)" srcset="images/babyPlaying-m.jpg">
+                    <img src="images/babyPlaying-s.jpg" alt="babyPlaying">
+                </picture>
+                <figcaption>Song Dynasty, HanchengSu, "Baby Playing"</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h1 class="icons"><span class="material-symbols-outlined">palette</span>Gallery</h1>
+            <p class="quote">In essence, "Guo Hua" comprises two main types: the meticulous style known as "Gongbi," associated with courtly styles, and the freehand style known as "Shuimohua" or "Xieyi," practiced by amateur scholars and artists.</p>
+
+            <h2>Gongbi Painting（工筆）</h2>
+            <p>meaning "meticulous", uses highly detailed brushstrokes that delimit details very precisely. It is often highly colored and usually depicts figural or narrative subjects. It is often practiced by artists working for the royal court or in independent workshops.</p>
+            <article class="Gongbi">
+                <figure>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/Gongbi1-L.jpg">
+                        <source media="(min-width: 800px)" srcset="images/Gongbi1-m.jpg">
+                        <img src="images/Gongbi1-s.jpg" alt="NobleWoman">
+                    </picture>
+                    <figcaption>Tang Dynasty, FangZhou, "NobleWoman"</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/Gongbi2-L.jpg">
+                        <source media="(min-width: 800px)" srcset="images/Gongbi2-m.jpg">
+                        <img src="images/Gongbi2-s.jpg" alt="elegantCat">
+                    </picture>
+
+                    <figcaption>unknown, "Elegant Cat"</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/Gongbi3-L.jpg">
+                        <source media="(min-width: 800px)" srcset="images/Gongbi3-m.jpg">
+                        <img src="images/Gongbi3-s.jpg" alt="hibiscusGoldenPheasant">
+                    </picture>
+
+                    <figcaption>Song Dynasty, JieZhao, "Hibiscus Golden Pheasant"</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/Gongbi4-L.jpg">
+                        <source media="(min-width: 800px)" srcset="images/Gongbi4-m.jpg">
+                        <img src="images/Gongbi4-s.jpg" alt="peonySparrow">
+                    </picture>
+
+                    <figcaption>Qing Dynasty, FeiyinYu, "Peony Sparrow"</figcaption>
+                </figure>
+
+            </article>
+
+            <h2>Ink and Wash Painting （写意）</h2>
+            <p>loosely termed watercolor or brush painting, a distinction that begins to be made in writings on art from the Song dynasty, though in fact the careers of leading exponents could benefit considerably.This style is also referred to as freehand style.</p>
+            <article class="freeStyle">
+                <figure>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/waterAndInk1-L.jpg">
+                        <source media="(min-width: 800px)" srcset="images/waterAndInk1-m.jpg">
+                        <img src="images/waterAndInk1-s.jpg" alt="orchidAndBamboo">
+                    </picture>
+
+                    <figcaption>Qing Dynasty, BanqiaoZhen, "Orchid and Bamboo"</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/waterAndInk2-L.jpg">
+                        <source media="(min-width: 800px)" srcset="images/waterAndInk2-m.jpg">
+                        <img src="images/waterAndInk2-s.jpg" alt="flowerAndBird">
+                    </picture>
+
+                    <figcaption>Modern Era, HuanwuHhuang, "Flower and Bird"</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/waterAndInk3-L.jpg">
+                        <source media="(min-width: 800px)" srcset="images/waterAndInk3-m.jpg">
+                        <img src="images/waterAndInk3-s.jpg" alt="eightShrimps">
+                    </picture>
+
+                    <figcaption>Modern Era, BaishiQi, "Eight Shrimps"</figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 1000px)" srcset="images/waterAndInk4-L.jpg">
+                        <source media="(min-width: 800px)" srcset="images/waterAndInk4-m.jpg">
+                        <img src="images/waterAndInk4-s.jpg" alt="twoMuledeer">
+                    </picture>
+
+                    <figcaption>Qing Dynasty, DaZhu, "Two Muledeer"</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section>
+            <h1 class="icons"><span class="material-symbols-outlined">brush</span>Tools</h1>
+            <p class="quote">The most significant distinction between Chinese painting and Western art is color modulation. In Chinese painting, ink and pigments are primarily modulated with glue and can be diluted directly with water. Western oil painting are modulated using oil mediums.</p>
+
+            <article>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 800px)" srcset="images/tool-mL.jpg">
+                        <img src="images/tool-s.jpg" alt="tools">
+                    </picture>
+
+                    <figcaption>Tools</figcaption>
+                </figure>
+                <h2>Brushes</h2>
+                <p>The brush, originating in China, has influenced traditional writing habits in regions like Korea and Japan. Brushes come in hard, soft, and mixed hair varieties. The wolf hair represents stiffness, while goat hair exemplifies softness. The choice of brush depends on calligraphy, painting styles, and personal preferences. Brushes from regions like Huzhou, Xuanzhou, and Jinxian in Jiangxi are highly regarded. </p>
+                <h2>Ink</h2>
+                <p>Ink is divided into two types: "oily smoke" and "pine smoke." Oily smoke ink is processed using tung oil or burnt smoke, while pine smoke ink is made from burnt pine branches. Huizhou ink, produced in ancient times, has always been favored by literati and is renowned for its quality.</p>
+                <h2>Paper</h2>
+                <p>Chinese painting uses a wide variety of papers, such as Xuan paper from Xuanzhou, bark paper from Sichuan, cloth paper from Yuxian, Henan, and cotton paper from Laiyang, Hunan. Xuan paper is divided into raw and processed types. Processed Xuan paper, treated with alum water, allows for precise depiction and repeated coloring, suitable for meticulous paintings. Raw Xuan paper, untreated, allows ink to spread freely, making it ideal for expressive paintings. Painting on silk, satin, fabrics, or pottery, as well as murals, is also common.</p>
+                <h2>Inkstone</h2>
+                <p>The most famous inkstones are She inkstone and Duan inkstone. She inkstone is from Shexian, Anhui, while Duan inkstone is from Gaoyao County, Guangdong. The choice of an inkstone depends on its fine texture, moisture retention, ease of ink generation, and resistance to water absorption.</p>
+                <h2>Pigments</h2>
+                <p>Pigments can be classified into mineral, plant-based, metallic, animal-based, and synthetic types. Common pigments fall into two categories, each yielding different effects. Plant-based ones like indigo, teng yellow, rouge, and peony red offer transparency and delicacy but may fade over time. Mineral pigments like cinnabar, vermillion, various greens, ochre, yellow ochre, and white powder are opaque, long-lasting, and retain their color over time.</p>
+            </article>
+            <div>
+                <h1 class="icons"><span class="material-symbols-outlined">description</span>How to Create it?</h1>
+                <h2>Gongbi Painting: How To Paint Peony</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gptYGrXr0cw?si=jlf67dM0OSMyKhi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h2>Ink and Wash Painting: How To Paint Peony</h2>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z5DTpUizWcE?si=KvztZJSexN588ouT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerLogo">
+            <img src="images/logo.png" alt="logo">
+            <h1 class="title">Chinese Paintings</h1>
+        </div>
+        <p>&copy; 2023 | An Ancient Culture Adventures</p>
+    </footer>
+</body>
+
+</html>
